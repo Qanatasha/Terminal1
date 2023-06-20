@@ -1,0 +1,58 @@
+1. Посмотреть где я - pwd
+2. Создасть папку - mkdir musical_instruments
+3. Зайти в папку - cd musical_instruments
+4. Создать 3 папки - mkdir guitars drums keys
+5. Зайти в любую папку - cd guitars
+6. Создать 5 файлов (3 txt, 2 json) - 
+touch gibson.txt fender.txt ibanez.txt type_of_guitar.json type2_of_guitar.json
+7. Создать 3 папки - mkdir gibson fender ibanez
+8. Вывести список содержимого папки - ls -la
+9. Открыть любой txt файл - cat gibson.txt
+10. Написать туда что-нибудь - cat >gibson.txt
+                                 1) les paul
+                                 2) epiphone
+                                 3) flying v
+11. Сохранить и выйти - Ctrl + C
+12. Выйти из папки на уровень выше - cd ..
+13. Переместить любые 2 файла, которые я создала в любую другую папку -
+mv guitars/gibson.txt drums/gibson.txt
+mv guitars/fender.txt drums/fender.txt
+14. Скопировать любые два файла -
+cp guitars/type_of_guitar.json keys/type_of_guitar.json
+cp guitar/type2_of_guitar.json keys/type2_of_guitar.json
+15. Найти файл по имени - find -name fender.txt
+16. Просмотреть содержимое в реальном времени (слово paul)
+tail -f gibson.txt | grep paul
+17. Вывести несколько первых строк из текстового файла - 
+head -n2 gibson.txt
+18. Вывести несколько последних строк - 
+tail -n2 gibson.txt
+19. Просмотреть содержимое длинного файла - 
+less gibson.txt
+1) les paul
+2) epiphone
+3) flying v
+gibson.txt (END)
+Для выхода нужно нажать Q
+20) Вывести дату и время - date
+
+Задание со *
+1) Отправить http запрос на сервер
+curl http://162.55.220.72:5006/terminal-hw-request
+{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+
+curl http://162.55.220.72:5005/get_method?name=Natasha\&age=27
+[
+  "Natasha",
+  "27"
+]
