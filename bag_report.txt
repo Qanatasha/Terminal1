@@ -1,0 +1,17 @@
+ID:AB-1
+Summary:[A[D[D[D[D[D [C[D[D[CAB-1[B :Add to cart" button not responding to click on product page
+Project: Website 21vek.by
+Version: 1.1
+Severity: Blocker
+Priority: High
+Status: Open
+Author: Kovrigina N
+Assigned To: Fedorchenko A
+Precondition: Go on a website 21 vek.by[D[D[D[D[D[[3~[3~[C[C[C[C[vek.by
+Environment: Windows 10, Google Chrome v: 94.0.4606.71
+Steps to reproduce:
+1) Find any product on the site
+2) Go on the page of a product
+3) Click on "Add to cart" button
+Actual result: ""[DAdd to cart[" button not responding to click
+Expected result: The product appears in the user's shopping cart
